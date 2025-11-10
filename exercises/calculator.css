@@ -1,0 +1,154 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-body);
+}
+
+.main-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.calculator-main {
+  background-color: var(--background-calc);
+  height: 700px;
+  width: 500px;
+  border-radius: 25px;
+  border-style: none;
+  box-shadow: 0px 0px 15px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.display {
+  position: absolute;
+  z-index: 2;
+  padding: 70px 200px 70px 200px;
+  background-color: var(--lightgray);
+  margin-top: 50px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border-gray);
+  border-radius: 25px;
+}
+
+.grid-container {
+  position: absolute;
+  z-index: 2;
+  bottom: 50px;
+  width: 400px;
+  height: 400px;
+  background-color: var(--lightgray);
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--border-gray);
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding-bottom: 25px;
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6,
+.button7,
+.button8,
+.button9,
+.button10,
+.button11,
+.button12 {
+  z-index: 3;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 15px;
+  border-style: none;
+  background-color: var(--button-coral);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover,
+.button4:hover,
+.button5:hover,
+.button6:hover,
+.button7:hover,
+.button8:hover,
+.button9:hover,
+.button10:hover,
+.button11:hover,
+.button12:hover,
+.button13:hover,
+.button14:hover,
+.button15:hover {
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  background-color: var(--button-hover-blue); 
+}
+
+.button1:active,
+.button2:active,
+.button3:active,
+.button4:active,
+.button5:active,
+.button6:active,
+.button7:active,
+.button8:active,
+.button9:active,
+.button10:active,
+.button11:active,
+.button12:active,
+.button13:active,
+.button14:active,
+.button15:active {
+  opacity: 0.6;
+  box-shadow: none;
+}
+
+.button-div2 {
+  position: absolute;
+  z-index: 4;
+  left: 32px;
+  margin-top: 10px;
+}
+
+.button13,
+.button14,
+.button15 {
+  width: 60px;
+  height: 60px;
+  margin-right: 28px;
+  cursor: pointer;
+  border-radius: 15px;
+  border-style: none;
+  background-color: var(--button-coral);
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: opacity 0.15s, box-shadow 0.15s, background-color 0.15s;
+}
+
+:root {
+  --lightgray: #d3d3d3;
+  --border-gray: #a2a2a2;
+  --background-calc: #71dcff;
+  --background-body: #8a8ad6;
+  --button-coral: #f08080;
+  --button-hover-blue: rgb(240, 111, 111);
+}
