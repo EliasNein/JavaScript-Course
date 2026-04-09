@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,32 +6,27 @@
     <title>DOM</title>
   </head>
   <body>
-    <button>
-      Hello
-    </button>
-    <button class="js-button">
-      Second button
-    </button>
+    <button>Hello</button>
+
+    <button class="js-button">Second button</button>
     <script>
-      console.log(document.querySelector('button').innerHTML);
-      document.querySelector('button')
-        .innerHTML = 'Changed';
-      
-      const buttonElement = document.querySelector('.js-button');
-      console.log(buttonElement);
+      document.querySelector("button").innerHTML = "Simon";
+
+     const buttonElement = document.querySelector('.js-button');
+     console.log(buttonElement);
+
       /*
       console.log(document.title);
       document.title = 'Changed';
 
       console.log(document.body);
-      console.log(typeof document.body);
 
       console.log(document.body.innerHTML);
       document.body.innerHTML = '<button>Good Job!</button>';
-
-     // document.body.innerHTML = 'hello';
-     // document.title = 'Good Job!';
-     */
+      /*
+      document.body.innerHTML = 'hello';
+      document.title = 'Good job!'; 
+      */
     </script>
   </body>
 </html>

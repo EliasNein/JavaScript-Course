@@ -1,14 +1,23 @@
 /*
-const product = {
+product1 = {
   name: 'basketball',
-  price: 2095,
-  ['delivery-time']: '3 days'
+  cost: 2095,
+ ['delivery-time']: '3 days'
 }
-console.log(product.price = 2595);
-console.log(product['delivery-time']);
+product1.cost = '2595';
+console.log(product1);
 */
 /*
 function comparePrice(product1, product2) {
+  product1 = {
+    name: 'basketball',
+    price: 15
+  }
+
+  product2 = {
+    name: 'flower',
+    price: 2
+  }
 
   if (product1.price < product2.price) {
     return product1;
@@ -17,45 +26,28 @@ function comparePrice(product1, product2) {
   }
 }
 
-  const product1 = {
-    name: 'döner',
-    price: 850
-  };
-
-  const product2 = {
-    name: 'dürüm',
-    price: 750
-  };
-
-console.log(comparePrice(product1, product2));
+console.log(comparePrice());
 */
 /*
 function isSameProduct(product1, product2) {
-  if (product1.name === product2.name && product1.price === product2.price) {
+  product1 = {
+    name: 'flower',
+    price: 2
+  }
+
+  product2 = {
+    name: 'flower',
+    price: 2
+  }
+
+  if (product1.price === product2.price && product1.name === product2.name) {
     return true;
   } else {
-    return false
+    return false;
   }
 }
 
-const product1 = {
-  name: 'döner',
-  price: 850
-}
-
-const product2 = {
-  name: 'döner',
-  price: 850
-}
-
-console.log(isSameProduct(product1, product2));
+console.log(isSameProduct());
 */
-
-let text = 'Hold me now im six feet from the edge and im thinking maby six feet aint so far down';
-let lowerText = text.toLowerCase();
-console.log(lowerText);
-
-let repeated = lowerText.repeat(0);
-console.log(repeated);
-
-// 8g
+console.log('Good morning'.toLowerCase());
+console.log('repeat'.repeat(5));
