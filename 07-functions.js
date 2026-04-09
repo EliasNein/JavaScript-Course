@@ -1,6 +1,6 @@
 /*
 function function1() {
-  console.log('hello');
+  console.log("hello");
   console.log(2 + 2);
 }
 
@@ -8,9 +8,8 @@ function1();
 function1();
 */
 
-function calculateTax (cost, taxPercent = 0.1) {
-  console.log(cost * taxPercent);
+function calculateTax() {
+  console.log(1000 * 0.1);
 }
 
-calculateTax(2000, 0.2);
-calculateTax(5000);
+calculateTax();
