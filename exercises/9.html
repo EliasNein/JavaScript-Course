@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Projects</title>
+  </head>
+  <body>
+    <!---
+    <button class="button1">9a</button>
+    <button class="button2">9b</button>
+    -->
+    <!--
+    <button onclick="document.querySelector('.paragraph').innerHTML = 'You choose: heads';">heads</button>
+    <button onclick="document.querySelector('.paragraph').innerHTML = 'You choose: tails';">tails</button>
+    <p class="paragraph"></p>
+    -->
+
+    <input type="text" placeholder="Name" class="text-box" onkeydown="eventKey();">
+    <button onclick="submitName();">Submit</button>
+    <p class="paragraph"></p>
+    <script>
+      function submitName() {
+        const box = document.querySelector('.text-box');
+        document.querySelector('.paragraph').innerHTML = `Your name is: ${box.value}!`;
+      }
+
+      function eventKey() {
+        if (event.key === 'Enter') {
+        submitName();
+      }
+      }
+      /*
+      console.log(document.querySelector('.button1'));
+      document.querySelector('.button2').innerHTML = '9b done';
+      */
+    </script>
+  </body>
+</html>

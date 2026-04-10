@@ -34,14 +34,13 @@
     </button>
     <script>
       let score = JSON.parse(localStorage.getItem("score")) || {
-        wins: 0,
-        losses: 0,
-        ties: 0,
-      };
+          wins: 0,
+          losses: 0,
+          ties: 0
+        };
 
-      updateScoreElement();
-
-      /*
+        updateScoreElement();
+/*
       if (!score) {
         score = {
           wins: 0,
@@ -81,7 +80,6 @@
           }
         }
 
-
         if (result === "You win") {
           score.wins += 1;
         } else if (result === "You lose") {
@@ -95,8 +93,7 @@
         updateScoreElement();
 
         document.querySelector('.js-result').innerHTML = result;
-        
-        document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${computerMove} Computer`;
+        document.querySelector('.js-moves').innerHTML = `You ${playerMove} - ${computerMove} Computer`
       }
 
       function updateScoreElement() {
