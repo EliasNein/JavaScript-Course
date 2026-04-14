@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .toggle-button {
+        background-color: green;
+      }
+
+      .js-button-active {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="toggle-button js-button" onclick="changeButton('.js-button');">
+      Gaming
+    </button>
+
+    <button class="toggle-button js-button2" onclick="changeButton('.js-button2');">
+      2
+    </button>
+
+    <button class="toggle-button js-button3" onclick="changeButton('.js-button3');">
+      3
+    </button>
+
+    <script>
+      function changeButton(selector) {
+        const buttonElement = document.querySelector(selector);
+        if (!buttonElement.classList.contains('js-button-active')) {
+          removeButton();
+          buttonElement.classList.add('js-button-active');
+        } else {
+          buttonElement.classList.remove('js-button-active');
+        }
+      } 
+
+      function removeButton() {
+        const checkButton = document.querySelector('.js-button-active');
+        if (checkButton) {
+          checkButton.classList.remove('js-button-active');
+        }
+      }
+    </script>
+  </body>
+</html>
